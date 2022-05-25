@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4c61152f48.js" crossorigin="anonymous"></script>
+
+    <title>Movies Library</title>
+  </head>
+  <body>
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Title</label>
+              <input type="text" class="form-control inputTitle" id="exampleFormControlInput1" placeholder="e.g. Brave">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Cover</label>
+              <input type="text" class="form-control inputImg" id="exampleFormControlInput1" placeholder="e.g. https://i1.sndcdn.com/artworks-000103691903-co18ts-t500x500.jpg">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Rating (out of 10)</label>
+              <input type="number" class="form-control inputRate" id="exampleFormControlInput1" placeholder="e.g. 8">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary closeBtn" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn saveBtn">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid header">
+        <div class="row">
+          <div class="col-sm">
+            <nav class="navbar fixed-top navbar-light">
+                <span class="navbar-brand mb-0 h1">Favourite Movies</span>
+                <button type="button" class="btn addBtn">Add a Movie</button>
+            </nav>
+          </div>
+        </div>
+    </div>
+    <section class="card">
+      <p>Favourite Movies Database</p>
+    </section>
+    <ul></ul>
+    <!-- JavaScript Src -->
+    <script src="script.js"></script>
+  </body>
+</html>
